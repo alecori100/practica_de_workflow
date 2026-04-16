@@ -1,6 +1,6 @@
 name: hola-mundo-node
 on: push
-.jobs: 
+jobs: 
   hola-mundo-node-jobs:
     runs-on: ubuntu-latest
     steps:
@@ -13,4 +13,4 @@ on: push
             node version: 20
         
         name: Ejecutar index.js
-        run: node.js
+        run: index.js
