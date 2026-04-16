@@ -2,7 +2,7 @@ name: hola-mundo
 on: push
 .jobs: 
   hola-mundo-jobs:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
       name: Hola mundo
       run: echo "Hola Mundo"
