@@ -1,4 +1,4 @@
-name: hola-mundo-node
+name: hola-mundo
 
 on: push
 jobs:
