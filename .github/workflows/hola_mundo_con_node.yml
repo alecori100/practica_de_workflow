@@ -1,16 +1,17 @@
 name: hola-mundo-node
+
 on: push
-jobs: 
+jobs:
   hola-mundo-node-jobs:
     runs-on: ubuntu-latest
     steps:
-        name: Checkout del repositorio
+      - name: Checkout del repositorio
         uses: actions/checkout@v4
 
-        name: Configurar node.jobs
-        uses: actions/setup-node@v4 
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
         with:
-            node version: 20
-        
-        name: Ejecutar index.js
-        run: index.js
+          node-version: 20
+
+      - name: Ejecutar index.js
+        run: node index.js
